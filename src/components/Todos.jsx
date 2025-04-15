@@ -24,7 +24,6 @@ const Todos = ({todos, setTodos}) => {
         <ul>
             {todos.map((todo) => <li key={todo.id}>
                 <span>id: {todo.id}</span>
-                <span>body: {todo.body}</span>
                 <button onClick={() => handlDelete(todo.id)} >delete</button>
             </li>
             )}
